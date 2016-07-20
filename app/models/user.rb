@@ -3,4 +3,12 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  def self.alphabetical
+    order(:name)
+  end
+
+  def contact_info
+    "#{name} <#{email}>"
+  end
 end

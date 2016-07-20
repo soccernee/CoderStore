@@ -26,6 +26,7 @@ group :development do
   gem 'better_errors'
   gem 'rails_layout'
   gem 'spring-commands-rspec'
+  gem 'guard-rspec', require: false
 end
 group :development, :test do
   gem 'factory_girl_rails'
