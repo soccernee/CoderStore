@@ -32,9 +32,6 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails'
 end
-group :production do
-  gem 'rails_12factor'
-end
 group :test do
   gem 'capybara', '~> 2.7.1'
   gem 'database_cleaner'
