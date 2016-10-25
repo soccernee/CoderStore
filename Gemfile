@@ -33,7 +33,7 @@ group :development, :test do
   gem 'rspec-rails'
 end
 group :test do
-  gem 'capybara', '~> 2.7.1'
+  gem 'capybara', '~> 2.10', '>= 2.10.1'
   gem 'database_cleaner'
   gem 'launchy'
   gem 'selenium-webdriver'
