@@ -1,5 +1,6 @@
 class Product < ActiveRecord::Base
   mount_uploader :image, ImageUploader
+  mount_uploader :thumbnail, ThumbnailUploader
   validates :name, presence: true
   has_many :photos
 

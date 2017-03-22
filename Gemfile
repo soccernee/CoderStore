@@ -42,5 +42,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'carrierwave'
 gem 'carrierwave-aws'
+gem 'carrierwave-postgresql'
 gem 'mini_magick'
 gem 'dotenv-rails', groups: [:development, :test], require: 'dotenv/rails-now'
+gem 'postgresql_lo_streamer'

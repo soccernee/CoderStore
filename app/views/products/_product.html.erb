@@ -4,7 +4,14 @@
         <div class="caption">
             <h4 class="pull-right"><%= product.price_vnd %></h4>
             <h4 class="product-name"><a href="#"><%= product.name %></a></h4>
-            <p><%= product.description %></p>
+            <div>
+              <p>
+                <% if product.thumbnail.url %>
+                  <%= image_tag product.thumbnail.url %>
+                <% end %>
+                <%= product.description %>
+              </p>
+            </div>
         </div>
         <div class="ratings">
             <p class="pull-right">15 reviews</p>

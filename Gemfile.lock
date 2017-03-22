@@ -77,6 +77,8 @@ GEM
     carrierwave-aws (1.0.1)
       aws-sdk (~> 2.0)
       carrierwave (~> 0.7)
+    carrierwave-postgresql (0.1.5)
+      carrierwave
     childprocess (0.5.8)
       ffi (~> 1.0, >= 1.0.11)
     coderay (1.1.0)
@@ -167,6 +169,8 @@ GEM
       shellany (~> 0.0)
     orm_adapter (0.5.0)
     pg (0.18.4)
+    postgresql_lo_streamer (1.1.0)
+      rails (>= 4.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -297,6 +301,7 @@ DEPENDENCIES
   capybara (~> 2.10, >= 2.10.1)
   carrierwave
   carrierwave-aws
+  carrierwave-postgresql
   coffee-rails (~> 4.2)
   database_cleaner
   devise
@@ -311,6 +316,7 @@ DEPENDENCIES
   listen (~> 3.0.5)
   mini_magick
   pg
+  postgresql_lo_streamer
   puma (~> 3.0)
   rails (~> 5.0, >= 5.0.2)
   rails_layout

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount PostgresqlLoStreamer::Engine => "/product_thumbnail"
   resources :photos
   resources :products
 
